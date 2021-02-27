@@ -1543,6 +1543,10 @@ sponsor
   display: none;
 }
 
+#sponsor .sponsor-item{
+  margin: 20px 0;
+}
+
 #sponsor img {
   width: 100%;
   overflow: hidden;
