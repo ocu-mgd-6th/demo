@@ -1519,14 +1519,19 @@ sponsor
 */
 
 #sponsor {
-  margin-top: 20px;
-  padding: 100px 0px;
+  padding-top: 60px;
+  padding-top: 3  0px;
   position: relative;
   z-index: 9;
+  height: 50vh;
 }
 
 #sponsor .section-heading {
   margin-bottom: 40px;
+}
+
+#sponsor .section-heading h5:before {
+  display: none;
 }
 
 #sponsor img {
@@ -1540,6 +1545,22 @@ sponsor
 
 #sponsor .container_site{
   margin: 30px 0;
+}
+
+
+#container {
+  padding:30px 0;
+  position: relative;
+  z-index: 9;
+  height: 20vh;
+
+}
+
+
+#container .container-info{
+margin-top: 10px;
+font-size: 20px
+;
 }
 
 /* 
