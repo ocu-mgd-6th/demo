@@ -305,7 +305,7 @@ p {
 }
 
 .navbar .nav-link {
-    color: #666;
+    color: #555;
 }
 
 .navbar .nav-link:hover {
@@ -363,13 +363,24 @@ p {
 
 
 .header .banner {
+    height: 100vh;
     background-image: url(../images/banner-thumb-bg.jpg);
-    background-position: center center;
     background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
     background-size: cover;
-    background-position: center center;
-    z-index: -1;
-    min-height: 100vh;
+}
+
+@media (max-width: 992px) {
+    .header .banner {
+        background-image: url(../images/banner-thumb-bg-04.jpg);
+        margin-top: 80px;
+        max-height: 80vh;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: cover;
+    }
 }
 
 /* 
@@ -860,38 +871,39 @@ footer {
     background-color: #EF8B8B;
 }
 
-footer .left-text-content p {
+footer .right-text-content p {
     margin-top: 5px;
     color: #fff;
     font-size: 14px;
     text-align: right;
 }
 
-footer .right-text-content p {
+footer h4 {
     color: #fff;
-    font-size: 14px;
+    font-size: 1.25em;
     margin-right: 15px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 
-footer .right-text-content {
+footer .left-text-content {
     text-align: left;
     margin-top: 10px;
 }
 
 
-footer .right-text-content ul li {
+footer .left-text-content ul li {
     display: inline-block;
     margin-left: 15px;
 }
 
-footer .right-text-content ul li:first-child {
+footer .left-text-content ul li:first-child {
     margin-left: 0px;
 }
 
 
-footer .right-text-content ul li a {
+footer .left-text-content ul li a {
     width: 44px;
     height: 44px;
     display: inline-block;
@@ -911,6 +923,12 @@ footer .right-text-content ul li a:hover {
     color: #2a2a2a;
 }
 
+@media (max-width: 992px) {
+
+    footer .left-text-content ul {
+        margin-bottom: 20px;
+    }
+}
 
 /* 
 ---------------------------------------------
