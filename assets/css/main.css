@@ -608,6 +608,20 @@ p {
     }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    :root {
+        --main-bg: url(../images/main-thumb-bg-01.jpg); /*(add your relative URL)*/
+    }
+
+    .logo {
+
+        background-image: var(--main-bg);
+
+    }
+
+}
+
+
 /* 
 ---------------------------------------------
             offers start
