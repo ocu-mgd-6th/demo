@@ -390,9 +390,9 @@ p {
 */
 :root {
     --pink-main-bg: url(https://i.imgur.com/avGYB3Y.jpg); /*白晝模式 背景*/
-    --black-main-bg: url(\\images/main-thumb-bg-02.jpg);/*黑幕模式 背景*/
-    --pink-img: url(../images/main-thumb-o1.jpg);
-    --black-img: url(../images/main-thumb-o2.jpg);
+    --black-main-bg: url(https://i.imgur.com/0X8B2ll.jpg);/*黑幕模式 背景*/
+    --pink-img: url(https://i.imgur.com/7XaYhJ4.jpg);
+    --black-img: url(https://i.imgur.com/TB0WZ8X.jpg);
     --pink-btn-icon: "\f186";
     --black-btn-icon: "\f185";
     --pink-title-text-color: #ee8d8d;
@@ -402,8 +402,6 @@ p {
 
 #mainvisual,
 #sponsor {
-    -webkit-background-image: var(--pink-main-bg);
-    -moz-background-image: var(--pink-main-bg);
     background-image: var(--pink-main-bg);
     background-position: center center;
     background-repeat: no-repeat;
