@@ -389,8 +389,8 @@ p {
 --------------------------------------------- 
 */
 :root {
-    --pink-main-bg: url(../images/main-thumb-bg-01.jpg);
-    --black-main-bg: url(../images/main-thumb-bg-02.jpg);
+    --pink-main-bg: url(../images/main-thumb-bg-01.jpg); /*白晝模式 背景*/
+    --black-main-bg: url(../images/main-thumb-bg-02.jpg);/*黑幕模式 背景*/
     --pink-img: url(../images/main-thumb-o1.jpg);
     --black-img: url(../images/main-thumb-o2.jpg);
     --pink-btn-icon: "\f186";
@@ -402,9 +402,9 @@ p {
 
 #mainvisual,
 #sponsor {
-    -webkit-background-image: var(--pink-main-bg);
-    -moz-background-image: var(--pink-main-bg);
-    background-image: var(--pink-main-bg);
+    -webkit-background-image: var(--alternatebackground, url(../images/main-thumb-bg-01.jpg));
+    -moz-background-image: var(--alternatebackground, url(../images/main-thumb-bg-01.jpg));
+    background-image: var(--alternatebackground, url(../images/main-thumb-bg-01.jpg));
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
