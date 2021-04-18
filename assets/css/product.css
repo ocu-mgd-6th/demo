@@ -181,10 +181,25 @@ font & reset css
 
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 
+/* 
+---------------------------------------------
+glod
+--------------------------------------------- 
+*/
+body span {
+    font-family: 'cwTeXFangSong', serif;
+}
 
+.section {
+    padding: 80px 0;
+}
 
+/* 
+---------------------------------------------
+hero
+--------------------------------------------- 
+*/
 .hero {
-    height: 30vh;
     background-image: url(../images/main-thumb-bg-02.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -197,34 +212,181 @@ font & reset css
 }
 
 .hero-content {
-    line-height: 30vh;
+    padding: 30px 0;
 }
 
-
-
-
-.item-title {
+.hero-content .item-title {
     display: block;
     font-size: 1.25em;
     position: relative;
     padding-left: 46px;
     font-weight: 600;
-    color: #C6983F;
+    color: #fff;
+    margin-bottom: 30px;
 }
 
-.item-title::before {
+.hero-content .item-title::before {
     content: "";
     position: absolute;
     top: 50%;
-    background-color: #C6983F;
+    background-color: #fff;
     width: 36px;
     height: 2px;
     left: 0;
 }
 
-.section {
-    height: 100vh;
+.hero-content .product-name {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: #C6983F;
+    margin-bottom: 30px;
 }
+
+/* 
+---------------------------------------------
+product
+--------------------------------------------- 
+*/
+#product {
+    background-image: url(../images/main-thumb-bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: rgba(54, 54, 54, 0.055);
+    background-blend-mode: multiply;
+}
+
+#product .product-content {
+    background-color: #f8f9fa89;
+    padding: 30px;
+}
+
+#product .product-content .top {
+    margin-bottom: 60px;
+}
+
+.product-content .right {
+    padding: 30px 15px;
+    letter-spacing: 0.125em;
+    line-height: 1.25em;
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.product-content .right .product-title {
+    color: #ee8d8d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-content .right .title-zh {
+    font-family: 'cwTeXFangSong', serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.product-content .right .product-desc {
+    margin-bottom: 20px;
+}
+
+.product-content .right .modal_info_text {
+    font-size: 1.125em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.product-content .right .member_1,
+.product-content .right .member_2,
+.instructor {
+    margin-bottom: 10px;
+}
+
+.product-content .right {
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.product-content .right ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.product-content .right ul li:first-child {
+    margin-left: 0px;
+}
+
+.product-content .right ul li a {
+    width: 44px;
+    height: 44px;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    font-size: 20px;
+    background-color: #EF8B8B;
+    border-radius: 50%;
+    color: #fff;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+
+#product .product-content .back-btn {
+    position: relative;
+    padding: 7px 20px;
+    max-width: 120px;
+    max-height: 38px;
+    text-align: center;
+    transition-duration: .3s;
+    border: 2px solid #ee8d8d;
+    cursor: pointer;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+
+#product .product-content .back-btn a {
+    color: #ee8d8d;
+    font-weight: 600;
+}
+
+#product .product-content .back-btn:hover {
+    background-color: #ee8d8d;
+    transition: .3s;
+}
+
+#product .product-content .back-btn:hover>a {
+    color: #f8f9fa;
+}
+
+#product .product-content .back-btn::after,
+#product .product-content .back-btn::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    display: block;
+    width: 2px;
+    background-color: #ee8d8d;
+}
+
+#product .product-content .back-btn::after {
+    right: -12px;
+}
+
+#product .product-content .back-btn::before {
+    left: -12px;
+}
+
+#product .product-content .back-btn:hover>a {
+    color: #f8f9fa;
+}
+
+
+
+
+
 
 /* 
 ---------------------------------------------
