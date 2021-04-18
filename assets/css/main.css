@@ -389,10 +389,10 @@ p {
 --------------------------------------------- 
 */
 :root {
-    --pink-main-bg: url(https://i.imgur.com/avGYB3Y.jpg); /*白晝模式 背景*/
-    --black-main-bg: url(https://i.imgur.com/YW95XmL.jpg);/*黑幕模式 背景*/
-    --pink-img: url(https://i.imgur.com/7XaYhJ4.jpg);
-    --black-img: url(https://i.imgur.com/TB0WZ8X.jpg);
+    --pink-main-bg: url(https://imgur.com/ZQzrGo8.jpg); /*白晝模式 背景*/
+    --black-main-bg: url(https://imgur.com/ZR1B4Lr.jpg);/*黑幕模式 背景*/
+    --pink-img: url(https://imgur.com/vq0NZd3.jpg);
+    --black-img: url(https://imgur.com/3EXrunS.jpg);
     --pink-btn-icon: "\f186";
     --black-btn-icon: "\f185";
     --pink-title-text-color: #ee8d8d;
