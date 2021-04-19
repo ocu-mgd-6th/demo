@@ -389,8 +389,10 @@ p {
 --------------------------------------------- 
 */
 :root {
-    --pink-main-bg: url(https://imgur.com/ZQzrGo8.jpg); /*白晝模式 背景*/
-    --black-main-bg: url(https://imgur.com/ZR1B4Lr.jpg);/*黑幕模式 背景*/
+    --pink-main-bg: url(https://imgur.com/ZQzrGo8.jpg);
+    /*白晝模式 背景*/
+    --black-main-bg: url(https://imgur.com/ZR1B4Lr.jpg);
+    /*黑幕模式 背景*/
     --pink-img: url(https://imgur.com/vq0NZd3.jpg);
     --black-img: url(https://imgur.com/3EXrunS.jpg);
     --pink-btn-icon: "\f186";
@@ -650,7 +652,8 @@ p {
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% - 107px);
+    height: 170px;
+    ;
     background: #ffd0d070;
     transition: .5s ease;
     opacity: 0;
@@ -681,11 +684,12 @@ p {
 
 #offers .card .card-footer {
     background-color: #f8f9fa;
-    padding: 10px 20px 20px 20px;
+    padding: 10px 20px 10px 20px;
 
 }
 
 #offers .card .card-footer h4 {
+    font-size: 1.25em;
     line-height: 1;
     font-weight: 600;
 }
@@ -700,12 +704,13 @@ p {
 
 #offers .card .card-footer .team-tag .tag-txt {
     font-size: 14px;
-    display: inline;
+    display: inline-block;
     padding: 6px 12px;
     background-color: #ffd0d0;
     color: #2a2a2a;
     border-radius: 20px;
     margin-right: 6px;
+    margin-bottom: 10px;
 }
 
 /* 
@@ -927,6 +932,7 @@ footer .right-text-content ul li a:hover {
         margin-bottom: 20px;
     }
 }
+
 /* 
 ---------------------------------------------
 #preloader
@@ -942,9 +948,9 @@ footer .right-text-content ul li a:hover {
     position: fixed;
     z-index: 99999;
     color: #fff;
-  }
-  
-  #preloader .jumper {
+}
+
+#preloader .jumper {
     left: 0;
     top: 0;
     right: 0;
@@ -954,9 +960,9 @@ footer .right-text-content ul li a:hover {
     margin: auto;
     width: 50px;
     height: 50px;
-  }
-  
-  #preloader .jumper > div {
+}
+
+#preloader .jumper>div {
     background-color: #fff;
     width: 10px;
     height: 10px;
@@ -969,45 +975,48 @@ footer .right-text-content ul li a:hover {
     height: 50px;
     -webkit-animation: jumper 1s 0s linear infinite;
     animation: jumper 1s 0s linear infinite;
-  }
-  
-  #preloader .jumper > div:nth-child(2) {
+}
+
+#preloader .jumper>div:nth-child(2) {
     -webkit-animation-delay: 0.33333s;
     animation-delay: 0.33333s;
-  }
-  
-  #preloader .jumper > div:nth-child(3) {
+}
+
+#preloader .jumper>div:nth-child(3) {
     -webkit-animation-delay: 0.66666s;
     animation-delay: 0.66666s;
-  }
-  
-  @-webkit-keyframes jumper {
+}
+
+@-webkit-keyframes jumper {
     0% {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
     }
+
     5% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
     }
-  }
-  
-  @keyframes jumper {
+}
+
+@keyframes jumper {
     0% {
-      opacity: 0;
-      -webkit-transform: scale(0);
-      transform: scale(0);
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
     }
+
     5% {
-      opacity: 1;
+        opacity: 1;
     }
+
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
+}
